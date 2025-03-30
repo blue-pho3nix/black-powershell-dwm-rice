@@ -1,2 +1,2 @@
 # dwm-rice
-Kali &amp; Arch DWM Love
+DWM Love
