@@ -1,0 +1,5 @@
+2025/03/24-17:15:30.424 4 Creating DB /home/blue/.config/chromium/Default/Local Storage/leveldb since it was missing.
+2025/03/24-17:15:30.437 4 Reusing MANIFEST /home/blue/.config/chromium/Default/Local Storage/leveldb/MANIFEST-000001
+2025/03/24-17:16:40.478 4 Level-0 table #5: started
+2025/03/24-17:16:40.482 4 Level-0 table #5: 67076 bytes OK
+2025/03/24-17:16:40.485 4 Delete type=0 #3
