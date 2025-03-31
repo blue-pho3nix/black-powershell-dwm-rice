@@ -119,7 +119,6 @@ COMMANDS=(
     fastfetch
     find
     lf
-    ranger
     ps
     ip
     msfconsole
@@ -149,17 +148,10 @@ alias up='sudo apt-get update && sudo apt-get full-upgrade -y'
 alias f='sudo apt-get update --fix-missing && sudo apt-get update'
 alias n='source ~/.config/zsh/.zshrc'
 alias m='sudo make clean install'
-alias git-dumper='source /home/blue/Documents/useful/git-dumper/.venv/bin/activate && git-dumper'
 alias o='sudo openvpn '
 alias i='sudo apt update && sudo apt install '
 alias ko='sudo killall openvpn'
-alias srustscan='sudo /home/linuxbrew/.linuxbrew/bin/rustscan'
 
-export PATH=/home/blue/.local/bin:$PATH
-export PATH=/home/blue/.local/bin/cron:$PATH
-export PATH=/home/blue/.local/bin/statusbar:$PATH
-export PATH=/home/blue/Documents/useful/jdk-11.0.26+4/bin:$PATH
-
-
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
-
+export PATH=$HOME/.local/bin:$PATH
+export PATH=$HOME/.local/bin/cron:$PATH
+export PATH=$HOME/.local/bin/statusbar:$PATH

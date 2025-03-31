@@ -113,28 +113,28 @@ float alphaUnfocus;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	"#000000",
-	"#d81860",
-	"#60ff60",
-	"#f9fd75",
-	"#4695c8",
-	"#a78edb",
-	"#43afce",
-	"#f3ebe2",
-	"#4d4d4d",
-	"#f00060",
-	"#70ff70",
-	"#f9fd80",
-	"#5a9dc8",
-	"#b29fdb",
-	"#69b8ce",
-	"#eeeeee",
+	"#4F4F4F", /* black   */
+	"#FF6C60", /* red     */
+	"#FF6C60", /* green   */
+	"#FFFFB6", /* yellow  */
+	"#96CBFE", /* blue    */
+	"#FF73FD", /* magenta */
+	"#C6C5FE", /* cyan    */
+	"#EEEEEE", /* white   */
+	"#7C7C7C", /* bright black */
+	"#FFB6B0", /* bright red */
+	"#CEFFAC", /* bright green */
+	"#FFFFCC", /* bright yellow */
+	"#B5DCFF", /* bright blue */
+	"#FF9CFE", /* bright magenta */
+	"#DFDFFE", /* bright cyan */
+	"#FFFFFF", /* bright white */
 	[255] = 0,
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#66ff66", /* 10  -> cursor */
-	"#66ff66", /* 10  -> rev cursor*/
+	"#68D4F1", /* 10  -> cursor */
+	"#68D4F1", /* 10  -> rev cursor*/
 	"#000000", /* 1 -> bg */
-	"#66ff66", /* 10 -> fg */
+	"#FFFF4E", /* 10 -> fg */
 };
 
 
@@ -284,6 +284,8 @@ static Shortcut shortcuts[] = {
 	{ MODKEY,               XK_y,           externalpipe,   {.v = copyurlcmd } },
 	{ MODKEY,               XK_o,           externalpipe,   {.v = copyoutput } },
 };
+
+#define HISTORY_SIZE 40000
 
 /*
  * Special keys (change & recompile st.info accordingly)
