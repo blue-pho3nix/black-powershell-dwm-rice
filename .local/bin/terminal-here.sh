@@ -22,4 +22,4 @@ else
 fi
 
 # Launch st in the detected directory
-(cd "$working_directory" && alacritty)
+(cd "$working_directory" && st)

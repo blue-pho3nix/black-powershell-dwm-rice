@@ -5,8 +5,8 @@
  *
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
-static char *font = "mono:pixelsize=12:antialias=true:autohint=true";
-static char *font2[] = { "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true" };
+static char *font = "mono:pixelsize=16:antialias=true:autohint=true";
+static char *font2[] = { "NotoColorEmoji:pixelsize=18:antialias=true:autohint=true" };
 static int borderpx = 2;
 
 /*
@@ -113,28 +113,29 @@ float alphaUnfocus;
 
 /* Terminal colors (16 first used in escape sequence) */
 static const char *colorname[] = {
-	"#4F4F4F", /* black   */
-	"#FF6C60", /* red     */
-	"#FF6C60", /* green   */
-	"#FFFFB6", /* yellow  */
-	"#96CBFE", /* blue    */
-	"#FF73FD", /* magenta */
-	"#C6C5FE", /* cyan    */
-	"#EEEEEE", /* white   */
-	"#7C7C7C", /* bright black */
-	"#FFB6B0", /* bright red */
-	"#CEFFAC", /* bright green */
-	"#FFFFCC", /* bright yellow */
-	"#B5DCFF", /* bright blue */
-	"#FF9CFE", /* bright magenta */
-	"#DFDFFE", /* bright cyan */
-	"#FFFFFF", /* bright white */
-	[255] = 0,
-	/* more colors can be added after 255 to use with DefaultXX */
-	"#68D4F1", /* 10  -> cursor */
-	"#68D4F1", /* 10  -> rev cursor*/
-	"#000000", /* 1 -> bg */
-	"#FFFF4E", /* 10 -> fg */
+        "#000000", /* 0: black   */
+        "#FF6C60", /* 1: red     */
+        "#FF6C60", /* 2: green   */
+        "#FFFFB6", /* 3: yellow  */
+        "#96CBFE", /* 4: blue    */
+        "#FF73FD", /* 5: magenta */
+        "#C6C5FE", /* 6: cyan    */
+        "#EEEEEE", /* 7: white   */
+        "#7C7C7C", /* 8: bright black */
+        "#FFB6B0", /* 9: bright red */
+        "#CEFFAC", /* 10: bright green */
+        "#FFFF4E", /* 11: bright yellow */
+        "#B5DCFF", /* 12: bright blue */
+        "#FF9CFE", /* 13: bright magenta */
+        "#DFDFFE", /* 14: bright cyan */
+        "#FFFFFF", /* 15: bright white */
+        [255] = 0,
+        /* more colors can be added after 255 to use with DefaultXX */
+        "#B5DCFF", /* 12 -> cursor */
+        "#B5DCFF", /* 12  -> rev cursor*/
+        "#000000", /* 0 -> bg */
+        "#B5DCFF", /* 0 -> fg */
+
 };
 
 
@@ -142,10 +143,10 @@ static const char *colorname[] = {
  * Default colors (colorname index)
  * foreground, background, cursor, reverse cursor
  */
-unsigned int defaultfg = 10;
+unsigned int defaultfg = 11;
 unsigned int defaultbg = 0;
-unsigned int defaultcs = 10;
-unsigned int defaultrcs = 10;
+unsigned int defaultcs = 12;
+unsigned int defaultrcs = 12;
 unsigned int background = 0;
 
 /*
