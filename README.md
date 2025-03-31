@@ -1,2 +1,2 @@
-# dwm-rice
+# Black Powershell DWM Rice 
 DWM Love
